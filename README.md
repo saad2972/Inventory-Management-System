@@ -1,36 +1,27 @@
-📦 Inventory Management System (Java, CLI)
-  A basic command-line inventory management system built in Java using core DSA and file handling concepts.
+# Inventory Management System (Java CLI)
 
-🔧 Features
-  Add, delete, update, and display products from file
+A simple command-line Inventory Management System built using Java. It demonstrates core DSA and file handling concepts.
 
-  Search products by category
+## Features
 
-  Sort inventory by category or pricing
+- Add, delete, update, and display products from a file  
+- Search products by category  
+- Sort inventory by category or pricing  
+- File-based storage using `inventory.txt`  
+- Admin-only access through `admin.txt`  
+- Exception handling for invalid inputs  
 
-  File-based storage using .txt files
+## Project Files
 
-  Admin-only access (reads admin.txt for authentication)
+- `Main.java` - Entry point, handles admin login  
+- `Product.java` - Defines product attributes  
+- `Database.java` - Handles file I/O operations  
+- `Warehouse.java` - Sorting and searching logic  
+- `admin.txt` - Stores admin credentials  
+- `inventory.txt` - Stores inventory data  
 
-  Robust exception handling for user input
+## How It Works
 
-🗂 Structure
-  Main.java: Program entry point with admin login
-  
-  Product.java: Product class with attributes and methods
-  
-  Database.java: Handles file operations (add, update, delete, etc.)
-  
-  Warehouse.java: Logic for sorting/searching
-  
-  admin.txt: Stores admin credentials
-  
-  inventory.txt: Stores inventory data
-
-🔐 How It Works
-  First, prompts admin username & password from admin.txt
-  
-  Once authenticated, allows access to manage inventory
-  
-  Simple terminal interface for interaction
-
+1. Program starts by asking for admin name and password (from `admin.txt`)
+2. On successful login, admin can manage the inventory
+3. All product data is saved and updated in `inventory.txt`
