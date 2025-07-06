@@ -1,0 +1,5 @@
+101,apple,fruits,20,159.0
+103,bread,dairy,20,159.0
+104,mango,fruits,20,159.0
+105,wheat,groscery,10,111.0
+108,banana,fruits,20,159.0
